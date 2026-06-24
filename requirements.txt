@@ -16,6 +16,10 @@ colorama==0.4.6 ; sys_platform == 'win32'
     # via
     #   click
     #   uvicorn
+dnspython==2.8.0
+    # via email-validator
+email-validator==2.3.0
+    # via pydantic
 fastapi==0.138.0
     # via sigma
 greenlet==3.5.2
@@ -25,11 +29,14 @@ h11==0.16.0
 httptools==0.8.0
     # via uvicorn
 idna==3.18
-    # via anyio
+    # via
+    #   anyio
+    #   email-validator
 pydantic==2.13.4
     # via
     #   fastapi
     #   pydantic-settings
+    #   sigma
 pydantic-core==2.46.4
     # via pydantic
 pydantic-settings==2.14.2
