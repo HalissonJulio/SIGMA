@@ -36,7 +36,7 @@ Copie o arquivo de exemplo `.env.example` para um novo arquivo chamado `.env` e
 preencha com os dados da sua instância:
 
 ```
-DATABASE_URL=postgresql+asyncpg://USUARIO:SENHA@HOST.aivencloud.com:PORTA/defaultdb?ssl=require
+DATABASE_URL=postgresql+asyncpg://<usuario>:<senha>@<host>:<porta>/<banco>?ssl=require
 ```
 
 > **Atenção a dois detalhes obrigatórios na URL:**
