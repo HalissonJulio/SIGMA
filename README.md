@@ -33,7 +33,8 @@ encontrará: host, porta, usuário, senha e nome do banco.
 ### 2. Crie o arquivo `.env`
 
 Copie o arquivo de exemplo `.env.example` para um novo arquivo chamado `.env` e
-preencha com os dados da sua instância:
+preencha com os dados da sua instância. Substitua cada valor entre `< >` pelos
+dados reais do painel (o host já vem completo, com `.aivencloud.com`):
 
 ```
 DATABASE_URL=postgresql+asyncpg://<usuario>:<senha>@<host>:<porta>/<banco>?ssl=require
@@ -60,6 +61,15 @@ cd SIGMA
 python -m venv venv
 venv\Scripts\activate
 ```
+
+> Se aparecer um erro dizendo que a execução de scripts está desabilitada
+> ("execution of scripts is disabled on this system"), rode o comando abaixo
+> antes de ativar a venv. Ele libera a execução apenas para a janela atual do
+> terminal, sem alterar nada permanentemente no sistema:
+>
+> ```powershell
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+> ```
 
 **Linux / macOS:**
 
